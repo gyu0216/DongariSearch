@@ -74,6 +74,7 @@ public class Searcher {
 			Searching();
 	}
 
+	
 //	public String toString(int i) {
 //		System.out.println(0000);
 //		return d.L[i].name+" "+d.L[i].location+" "+d.L[i].specificlocation+" "+d.L[i].tag[0]+" "+d.L[i].tag[1]+" "+d.L[i].tag[2];
