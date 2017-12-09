@@ -59,8 +59,8 @@ public class Searcher {
 				String s = input.next();
 				for (int i = 0; i < 3; i++) {
 					if (s.equals(d.L[i].name))
-						System.out.println(i);
-				}
+						System.out.println(d.toString(i));
+					}
 			}
 			else if (howtosearch.equals("2")) {
 				System.out.println("위치로 검색");
@@ -74,7 +74,6 @@ public class Searcher {
 			Searching();
 	}
 
-	
 //	public String toString(int i) {
 //		System.out.println(0000);
 //		return d.L[i].name+" "+d.L[i].location+" "+d.L[i].specificlocation+" "+d.L[i].tag[0]+" "+d.L[i].tag[1]+" "+d.L[i].tag[2];
