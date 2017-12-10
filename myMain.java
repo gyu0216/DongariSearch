@@ -5,7 +5,7 @@ import java.util.*;
 
 public class myMain {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
 		String usertype = null;
@@ -17,7 +17,7 @@ public class myMain {
 //		System.out.println(d.L[0].name);
 
 		try { // IDPW.txt
-			BufferedReader IDPWtxt = new BufferedReader(new FileReader(new File("C://Dongari//IDPW.txt")));
+			BufferedReader IDPWtxt = new BufferedReader(new FileReader(new File("C://IDPW.txt")));
 			String s = IDPWtxt.readLine();
 			for (int i = 0; s != null; i++) {
 				IDPW[i] = s.split(" ");
@@ -46,12 +46,12 @@ public class myMain {
 				System.out.println("신청자로 로그인.");
 				sleep(1000);
 				Applier applier = new Applier();
-				applier.askjob();
+//				applier.askjob();
 			} else if (usertype.equals("m")) { // 관리자 (manager)
 				System.out.println("관리자로 로그인.");
 				sleep(1000);
 				Manager manager = new Manager();
-				manager.askjob();
+//				manager.askjob();
 			}
 
 			// 종료 및 다른 작업 계속 할 수 있게

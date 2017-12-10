@@ -8,7 +8,7 @@ public class DongariList {
 
 	public DongariList() {
 		try { // Dongari.txt
-			BufferedReader Listtxt = new BufferedReader(new FileReader(new File("C://Dongari//DongariList.txt")));
+			BufferedReader Listtxt = new BufferedReader(new FileReader(new File("C://DongariList.txt")));
 			String s = Listtxt.readLine();
 			int dongsize = Integer.parseInt(s);
 			L = new DList[dongsize];
